@@ -19,6 +19,16 @@
   >
     <PigmentsModalBody />
   </BModal>
+  <BModal
+    title="Matthew Clarke: Identifying Jades"
+    v-model="showJades"
+    size="xl"
+    lazy
+    unmount-lazy
+    no-footer
+  >
+    <JadesModalBody />
+  </BModal>
 </template>
 
 <script setup lang="ts">
@@ -26,5 +36,5 @@ import { useModalsStore } from '@/store/modals';
 import { storeToRefs } from 'pinia';
 
 const modalsStore = useModalsStore();
-const { showKeats, showPigments } = storeToRefs(modalsStore);
+const { showKeats, showPigments, showJades } = storeToRefs(modalsStore);
 </script>

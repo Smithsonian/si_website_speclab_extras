@@ -38,21 +38,24 @@
                 <p class="mb-0">Running time: 7:37</p>
               </SpeclabExtrasTile>
             </a>
-            <SpeclabExtrasTile
-              title="Matthew Clarke: Identifying Jades"
-              :img-url="jadesUrl"
-              img-alt="A man points at a screen showing spectrum analyzer software"
-            >
-              <p>
-                The Smithsonian’s National Museum of Asian Art has a renowned collection, including
-                thousands of Chinese jades. However, the term "jade" is applied to many different
-                minerals. To assist with their conservation and preservation, it's important to know
-                the mineral composition of each object. Dr. Matthew Clarke demonstrates the
-                non-invasive technique of shortwave infrared reflectance spectroscopy as he quickly
-                differentiates the mineral composition of a set of samples.
-              </p>
-              <p class="mb-0">Running time: 3:42</p>
-            </SpeclabExtrasTile>
+            <a href="" @click="handleJadesClick">
+              <SpeclabExtrasTile
+                title="Matthew Clarke: Identifying Jades"
+                :img-url="jadesUrl"
+                img-alt="A man points at a screen showing spectrum analyzer software"
+              >
+                <p>
+                  The Smithsonian’s National Museum of Asian Art has a renowned collection,
+                  including thousands of Chinese jades. However, the term "jade" is applied to many
+                  different minerals. To assist with their conservation and preservation, it's
+                  important to know the mineral composition of each object. Dr. Matthew Clarke
+                  demonstrates the non-invasive technique of shortwave infrared reflectance
+                  spectroscopy as he quickly differentiates the mineral composition of a set of
+                  samples.
+                </p>
+                <p class="mb-0">Running time: 3:42</p>
+              </SpeclabExtrasTile>
+            </a>
             <SpeclabExtrasTile
               title="Mercedes López-Morales: Search for Earth-like Exoplanets"
               :img-url="mercedesUrl"
@@ -139,5 +142,10 @@ const handleKeatsClick = (e: MouseEvent) => {
 const handlePigmentsClick = (e: MouseEvent) => {
   e.preventDefault();
   modalsStore.showPigments = true;
+};
+
+const handleJadesClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showJades = true;
 };
 </script>
