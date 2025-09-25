@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import App from './App.vue';
+import { ViteSSG } from 'vite-ssg/single-page';
 
-createApp(App).mount('#app')
+export const createApp = ViteSSG(App);
