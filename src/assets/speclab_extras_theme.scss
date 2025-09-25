@@ -90,6 +90,9 @@ $nav-pills-border-radius: 0;
 }
 
 // Utility classes
+.bg-gen-black {
+  background-color: var(--gen-black) !important;
+}
 .bg-slr-light-grey {
   background-color: var(--slr-light-grey) !important;
 }
