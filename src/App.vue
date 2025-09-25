@@ -14,7 +14,11 @@ configure({ tagId: 'G-CQCJ1860S7' });
     </header>
     <main>
       <SpeclabExtrasIntro />
+      <SpeclabExtrasTileList />
     </main>
+    <footer>
+      <SpeclabExtrasFooter />
+    </footer>
   </BApp>
 </template>
 

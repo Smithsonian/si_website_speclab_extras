@@ -1,6 +1,6 @@
 <template>
-  <BNavbar v-b-color-mode="'dark'" variant="dark">
-    <BNavbarBrand href="#">
+  <BNavbar v-b-color-mode="'dark'" variant="dark" container="xl">
+    <BNavbarBrand href="https://datalabs.cfa.harvard.edu/">
       <img src="/src/assets/DataLabsLogo@2x.webp" height="45" width="195" />
     </BNavbarBrand>
     <BNavbarNav>
