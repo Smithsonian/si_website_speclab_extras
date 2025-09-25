@@ -56,21 +56,23 @@
                 <p class="mb-0">Running time: 3:42</p>
               </SpeclabExtrasTile>
             </a>
-            <SpeclabExtrasTile
-              title="Mercedes López-Morales: Search for Earth-like Exoplanets"
-              :img-url="mercedesUrl"
-              img-alt="A woman speaks to the camera"
-            >
-              <p>
-                Astrophysicist Dr. Mercedes López-Morales at the Smithsonian Astrophysical
-                Observatory is a specialist in studying the atmospheres of exoplanets. To try to
-                answer the question "Are we alone?", she describes the progress that has been made
-                so far to identify and categorize planets using the transiting method - as well as
-                the challenges ahead to identify an exoplanet that may have life outside our solar
-                system.
-              </p>
-              <p class="mb-0">Running time: 5:29</p>
-            </SpeclabExtrasTile>
+            <a href="" @click="handleLopezMoralesClick">
+              <SpeclabExtrasTile
+                title="Mercedes López-Morales: Search for Earth-like Exoplanets"
+                :img-url="mercedesUrl"
+                img-alt="A woman speaks to the camera"
+              >
+                <p>
+                  Astrophysicist Dr. Mercedes López-Morales at the Smithsonian Astrophysical
+                  Observatory is a specialist in studying the atmospheres of exoplanets. To try to
+                  answer the question "Are we alone?", she describes the progress that has been made
+                  so far to identify and categorize planets using the transiting method - as well as
+                  the challenges ahead to identify an exoplanet that may have life outside our solar
+                  system.
+                </p>
+                <p class="mb-0">Running time: 5:29</p>
+              </SpeclabExtrasTile>
+            </a>
             <a href="https://my.matterport.com/show/?m=m9ozTg7QiUi">
               <SpeclabExtrasTile
                 title="Harvard Plate Stacks: 3D Virtual Tour"
@@ -147,5 +149,10 @@ const handlePigmentsClick = (e: MouseEvent) => {
 const handleJadesClick = (e: MouseEvent) => {
   e.preventDefault();
   modalsStore.showJades = true;
+};
+
+const handleLopezMoralesClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showLopezMorales = true;
 };
 </script>

@@ -29,6 +29,16 @@
   >
     <JadesModalBody />
   </BModal>
+  <BModal
+    title="Mercedes López-Morales: Search for Earth-like Exoplanets"
+    v-model="showLopezMorales"
+    size="xl"
+    lazy
+    unmount-lazy
+    no-footer
+  >
+    <LopezMoralesModalBody />
+  </BModal>
 </template>
 
 <script setup lang="ts">
@@ -36,5 +46,5 @@ import { useModalsStore } from '@/store/modals';
 import { storeToRefs } from 'pinia';
 
 const modalsStore = useModalsStore();
-const { showKeats, showPigments, showJades } = storeToRefs(modalsStore);
+const { showKeats, showPigments, showJades, showLopezMorales } = storeToRefs(modalsStore);
 </script>
