@@ -19,6 +19,17 @@ export default defineConfig({
       resolvers: [BootstrapVueNextResolver()],
     }),
   ],
+  // Needed until Bootstrap migrates off Node Sass and onto Sass modules
+  // Optimistic estimate: 5.5
+  // Pessimistic estimate: 6
+  // See thread: https://github.com/orgs/twbs/discussions/41370
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['import', 'color-functions', 'global-builtin'],
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
