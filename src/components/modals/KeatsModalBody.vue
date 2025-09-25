@@ -12,6 +12,7 @@
       imaging is a necessary first step for understanding the history of - and the conservation of -
       Smithsonian objects.
     </p>
+    <p class="mb-0">Running time: 6:52</p>
   </div>
 </template>
 

@@ -18,6 +18,7 @@
       scroll where the pigments were applied. In this way, he locates places that may have faded or
       where the object was over-painted with new pigments in later efforts to repair the scroll.
     </p>
+    <p class="mb-0">Running time: 7:35</p>
   </div>
 </template>
 

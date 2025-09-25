@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-3">
     <video ref="videoPlayer" class="video-js">
       <slot></slot>
     </video>

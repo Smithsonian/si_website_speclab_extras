@@ -83,10 +83,12 @@ $diy-red: #c02325;
 }
 
 // SASS Bootstrap overrides
-$primary: $slr-light-brown;
-$secondary: $slr-dark-grey;
+$primary: $dl-dark-purple;
+$secondary: $sle-lavender;
 $dark: $gen-black;
 $nav-pills-border-radius: 0;
+$modal-content-bg: $sle-lavender;
+$modal-header-border-width: 0;
 
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-vue-next/src/styles/styles.scss';
@@ -108,15 +110,6 @@ $nav-pills-border-radius: 0;
   background-color: var(--sle-lavender) !important;
 }
 
-.text-gen-grey {
-  color: var(--gen-grey) !important;
-}
-
-// Custom classes
-// Adapted from .invalid-feedback, but without looking for a nearby group
-.form-error {
-  width: 100%;
-  margin: 1rem 0;
-  font-size: 0.875em;
-  color: var(--bs-form-invalid-color);
+.text-dl-dark-purple {
+  color: var(--dl-dark-purple) !important;
 }

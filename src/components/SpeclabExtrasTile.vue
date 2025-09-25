@@ -2,7 +2,9 @@
   <BCard no-body class="border-0 bg-sle-lavender rounded-4 overflow-hidden">
     <BCardImg :src="imgUrl" :alt="imgAlt" />
     <BCardBody class="pt-4 px-4 pb-5">
-      <BCardTitle class="speclab-extras-card-title text-uppercase">{{ title }}</BCardTitle>
+      <BCardTitle class="speclab-extras-card-title text-uppercase text-dl-dark-purple">{{
+        title
+      }}</BCardTitle>
       <slot></slot>
     </BCardBody>
   </BCard>

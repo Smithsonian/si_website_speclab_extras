@@ -13,6 +13,7 @@
       planets using the transiting method - as well as the challenges ahead to identify an exoplanet
       that may have life outside our solar system.
     </p>
+    <p class="mb-0">Running time: 5:29</p>
   </div>
 </template>
 

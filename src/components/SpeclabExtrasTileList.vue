@@ -35,7 +35,7 @@
                   applied. In this way, he locates places that may have faded or where the object
                   was over-painted with new pigments in later efforts to repair the scroll.
                 </p>
-                <p class="mb-0">Running time: 7:37</p>
+                <p class="mb-0">Running time: 7:35</p>
               </SpeclabExtrasTile>
             </a>
             <a href="" @click="handleJadesClick">
@@ -53,7 +53,7 @@
                   spectroscopy as he quickly differentiates the mineral composition of a set of
                   samples.
                 </p>
-                <p class="mb-0">Running time: 3:42</p>
+                <p class="mb-0">Running time: 3:43</p>
               </SpeclabExtrasTile>
             </a>
             <a href="" @click="handleLopezMoralesClick">

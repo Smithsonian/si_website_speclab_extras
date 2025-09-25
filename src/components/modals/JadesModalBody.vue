@@ -14,6 +14,7 @@
       reflectance spectroscopy as he quickly differentiates the mineral composition of a set of
       samples.
     </p>
+    <p class="mb-0">Running time: 3:43</p>
   </div>
 </template>
 
