@@ -19,23 +19,25 @@
                 <p class="mb-0">Running time: 6:52</p>
               </SpeclabExtrasTile>
             </a>
-            <SpeclabExtrasTile
-              title="Matthew Clarke: Identifying Pigments"
-              :img-url="matthewUrl"
-              img-alt="Stylized screenshot of spectrum analyzer software"
-            >
-              <p>
-                At the National Museum of Asian Art, Conservation Scientist Dr. Matthew Clarke is
-                studying the 13th century Japanese scroll, "The Miraculous Interventions of Jizō
-                Bosatsu." To learn more about the history of the scroll, Dr. Clarke imaged the
-                object with shortwave infrared reflectance spectroscopy. In this video, he
-                demonstrates the process with a sample chart of pigments, then matches the spectra
-                of the different pigments to areas in the paper scroll where the pigments were
-                applied. In this way, he locates places that may have faded or where the object was
-                over-painted with new pigments in later efforts to repair the scroll.
-              </p>
-              <p class="mb-0">Running time: 7:37</p>
-            </SpeclabExtrasTile>
+            <a href="" @click="handlePigmentsClick">
+              <SpeclabExtrasTile
+                title="Matthew Clarke: Identifying Pigments"
+                :img-url="matthewUrl"
+                img-alt="Stylized screenshot of spectrum analyzer software"
+              >
+                <p>
+                  At the National Museum of Asian Art, Conservation Scientist Dr. Matthew Clarke is
+                  studying the 13th century Japanese scroll, "The Miraculous Interventions of Jizō
+                  Bosatsu." To learn more about the history of the scroll, Dr. Clarke imaged the
+                  object with shortwave infrared reflectance spectroscopy. In this video, he
+                  demonstrates the process with a sample chart of pigments, then matches the spectra
+                  of the different pigments to areas in the paper scroll where the pigments were
+                  applied. In this way, he locates places that may have faded or where the object
+                  was over-painted with new pigments in later efforts to repair the scroll.
+                </p>
+                <p class="mb-0">Running time: 7:37</p>
+              </SpeclabExtrasTile>
+            </a>
             <SpeclabExtrasTile
               title="Matthew Clarke: Identifying Jades"
               :img-url="jadesUrl"
@@ -132,5 +134,10 @@ const modalsStore = useModalsStore();
 const handleKeatsClick = (e: MouseEvent) => {
   e.preventDefault();
   modalsStore.showKeats = true;
+};
+
+const handlePigmentsClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showPigments = true;
 };
 </script>
