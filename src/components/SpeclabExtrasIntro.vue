@@ -5,7 +5,7 @@
     >
       <BContainer>
         <BRow>
-          <BCol cols="12" xl="10" xxl="8">
+          <BCol cols="12" xl="10" xxl="8" offset-xxl="1">
             <p class="mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar lectus, eu
               sodales leo. Nullam eleifend bibendum sem quis euismod. Etiam a efficitur neque, id
