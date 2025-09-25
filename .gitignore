@@ -28,3 +28,10 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# SSG build output
+.vite-ssg-temp
+.temp
+
+# Generated type files
+components.d.ts
