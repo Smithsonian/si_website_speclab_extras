@@ -7,9 +7,8 @@
         <BRow>
           <BCol cols="12" xl="10" xxl="8" offset-xxl="1">
             <p class="mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et pulvinar lectus, eu
-              sodales leo. Nullam eleifend bibendum sem quis euismod. Etiam a efficitur neque, id
-              pretium augue. Pellentesque egestas finibus tellus.
+              The study of light, color, and spectra connects to stories from many disciplines, from
+              history, art, science, and culture.
             </p>
           </BCol>
         </BRow>

@@ -19,6 +19,8 @@ configure({ tagId: 'G-CQCJ1860S7' });
     <footer>
       <SpeclabExtrasFooter />
     </footer>
+
+    <AllModals />
   </BApp>
 </template>
 
