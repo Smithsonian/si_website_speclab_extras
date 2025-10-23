@@ -47,6 +47,18 @@
   >
     <LopezMoralesModalBody />
   </BModal>
+  <BModal
+    title="Thom Burns: Annie Jump Cannon"
+    id="cannon-modal"
+    v-model="showCannon"
+    size="xl"
+    lazy
+    unmount-lazy
+    no-footer
+    header-class="pb-0"
+  >
+    <AnnieJumpCannonModalBody />
+  </BModal>
 </template>
 
 <script setup lang="ts">
@@ -54,5 +66,6 @@ import { useModalsStore } from '@/store/modals';
 import { storeToRefs } from 'pinia';
 
 const modalsStore = useModalsStore();
-const { showKeats, showPigments, showJades, showLopezMorales } = storeToRefs(modalsStore);
+const { showKeats, showPigments, showJades, showLopezMorales, showCannon } =
+  storeToRefs(modalsStore);
 </script>

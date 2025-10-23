@@ -9,6 +9,7 @@ export const useModalsStore = defineStore('modals', () => {
   const showPigments = ref(false);
   const showJades = ref(false);
   const showLopezMorales = ref(false);
+  const showCannon = ref(false);
 
   const initialize = () => {
     if (import.meta.env.SSR) {
@@ -28,6 +29,9 @@ export const useModalsStore = defineStore('modals', () => {
       case 'lopezMorales':
         showLopezMorales.value = true;
         break;
+      case 'cannon':
+        showCannon.value = true;
+        break;
       default:
       // Do nothing; no modal to open
     }
@@ -36,8 +40,8 @@ export const useModalsStore = defineStore('modals', () => {
   if (!import.meta.env.SSR) {
     // Serialize to session storage when modals open and close
     watch(
-      [showKeats, showPigments, showJades, showLopezMorales],
-      ([newKeats, newPigments, newJades, newLopezMorales]) => {
+      [showKeats, showPigments, showJades, showLopezMorales, showCannon],
+      ([newKeats, newPigments, newJades, newLopezMorales, newCannon]) => {
         if (newKeats) {
           setKey(MODAL_KEY, 'keats');
         } else if (newPigments) {
@@ -46,6 +50,8 @@ export const useModalsStore = defineStore('modals', () => {
           setKey(MODAL_KEY, 'jades');
         } else if (newLopezMorales) {
           setKey(MODAL_KEY, 'lopezMorales');
+        } else if (newCannon) {
+          setKey(MODAL_KEY, 'cannon');
         } else {
           removeKey(MODAL_KEY);
         }
@@ -58,6 +64,7 @@ export const useModalsStore = defineStore('modals', () => {
     showPigments,
     showJades,
     showLopezMorales,
+    showCannon,
     initialize,
   };
 });

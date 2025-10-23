@@ -102,21 +102,24 @@
                 star.
               </SpeclabExtrasTile>
             </a>
-            <SpeclabExtrasTile
-              title="Thom Burns: Annie Jump Cannon"
-              :img-url="annieUrl"
-              img-alt="Black-and-white photo. Woman sits at a desk"
-            >
-              <p>
-                Annie Jump Cannon (1863-1941) was a pioneering woman astronomer who classified over
-                40,000 stars using their brightness and spectral types. Thom Burns is the Curator of
-                the Harvard Glass Plate Collection at the Center for Astrophysics
-                Harvard-Smithsonian. He describes how Cannon, one of the famous "Harvard Computers,"
-                studied the plates in the collection and how her work advanced the dream of Henry
-                and Mary Ann Draper to use stellar spectra to understand the lifecycle of stars.
-              </p>
-              <p class="mb-0">Running time: TBD</p>
-            </SpeclabExtrasTile>
+            <a href="" @click="handleCannonClick">
+              <SpeclabExtrasTile
+                title="Thom Burns: Annie Jump Cannon"
+                :img-url="annieUrl"
+                img-alt="Black-and-white photo. Woman sits at a desk"
+              >
+                <p>
+                  Annie Jump Cannon (1863-1941) was a pioneering woman astronomer who classified
+                  over 40,000 stars using their brightness and spectral types. Thom Burns is the
+                  Curator of the Harvard Glass Plate Collection at the Center for Astrophysics
+                  Harvard-Smithsonian. He describes how Cannon, one of the famous "Harvard
+                  Computers," studied the plates in the collection and how her work advanced the
+                  dream of Henry and Mary Ann Draper to use stellar spectra to understand the
+                  lifecycle of stars.
+                </p>
+                <p class="mb-0">Running time: 5:06</p>
+              </SpeclabExtrasTile>
+            </a>
           </BCardGroup>
         </BCol>
       </BRow>
@@ -154,5 +157,10 @@ const handleJadesClick = (e: MouseEvent) => {
 const handleLopezMoralesClick = (e: MouseEvent) => {
   e.preventDefault();
   modalsStore.showLopezMorales = true;
+};
+
+const handleCannonClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showCannon = true;
 };
 </script>
