@@ -1,11 +1,13 @@
 <template>
   <div>
-    <VideoJSPlayer :other-options="{ poster }">
+    <AblePlayer :other-options="{ poster }">
       <source
+        type="video/mp4"
         src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_keats_conservation_science_imaging-20250910.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
-    </VideoJSPlayer>
+      <track label="Audio Description" kind="descriptions" srclang="en" :src="description" />
+    </AblePlayer>
     <p>
       Smithsonian Imaging Scientist, Dr. Keats Webb, demonstrates some of the different imaging
       techniques that she uses at the Smithsonian Museum Conservation Institute, and describes how
@@ -19,4 +21,5 @@
 <script setup lang="ts">
 import poster from '@/assets/video_metadata/video_extra_keats_conservation_science_imaging_poster.jpg';
 import captions from '@/assets/video_metadata/video_extra_keats_conservation_science_imaging.vtt';
+import description from '@/assets/video_metadata/video_extra_keats_conservation_science_imaging_audio_description.vtt';
 </script>
