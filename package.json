@@ -16,8 +16,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@smithsonian/ableplayer-module-test": "^4.9.1",
     "@unhead/vue": "^2.0.17",
-    "@vanessaphippscfa/ableplayer": "^4.9.0",
     "bootstrap": "^5.3.8",
     "bootstrap-vue-next": "^0.40.5",
     "pinia": "^3.0.3",
