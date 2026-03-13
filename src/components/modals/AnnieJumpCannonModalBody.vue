@@ -1,11 +1,11 @@
 <template>
   <div>
-    <VideoJSPlayer :other-options="{ poster }">
+    <AblePlayer :other-options="{ poster }">
       <source
         src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/annie_jump_cannon_classifying_stars.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
-    </VideoJSPlayer>
+    </AblePlayer>
     <p>
       Annie Jump Cannon (1863-1941) was a pioneering woman astronomer who classified over 40,000
       stars using their brightness and spectral types. Thom Burns is the Curator of the Harvard

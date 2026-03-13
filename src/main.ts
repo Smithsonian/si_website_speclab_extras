@@ -1,5 +1,4 @@
 import './assets/speclab_extras_theme.scss';
-import 'video.js/dist/video-js.css';
 // import 'ableplayer/build/ableplayer.min.css';
 import '@smithsonian/ableplayer-module-test/build/ableplayer.min.css';
 import App from './App.vue';

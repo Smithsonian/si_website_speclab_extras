@@ -1,11 +1,11 @@
 <template>
   <div>
-    <VideoJSPlayer :other-options="{ poster }">
+    <AblePlayer :other-options="{ poster }">
       <source
         src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_matt_identifying_pigments-20250910.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
-    </VideoJSPlayer>
+    </AblePlayer>
     <p>
       At the National Museum of Asian Art, Conservation Scientist Dr. Matthew Clarke is studying the
       13th century Japanese scroll,

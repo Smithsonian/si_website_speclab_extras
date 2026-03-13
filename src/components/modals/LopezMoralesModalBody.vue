@@ -1,11 +1,11 @@
 <template>
   <div>
-    <VideoJSPlayer :other-options="{ poster }">
+    <AblePlayer :other-options="{ poster }">
       <source
         src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_mercedes-20250910.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
-    </VideoJSPlayer>
+    </AblePlayer>
     <p>
       Astrophysicist Dr. Mercedes López-Morales at the Smithsonian Astrophysical Observatory is a
       specialist in studying the atmospheres of exoplanets. To try to answer the question "Are we

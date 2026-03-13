@@ -1,11 +1,11 @@
 <template>
   <div>
-    <VideoJSPlayer :other-options="{ poster }">
+    <AblePlayer :other-options="{ poster }">
       <source
         src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_matt_identifying_jades-20250910.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
-    </VideoJSPlayer>
+    </AblePlayer>
     <p>
       The Smithsonian’s National Museum of Asian Art has a renowned collection, including thousands
       of Chinese jades. However, the term "jade" is applied to many different minerals. To assist
