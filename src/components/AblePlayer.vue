@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, useTemplateRef } from 'vue';
-import AblePlayer from '@vanessaphippscfa/ableplayer';
+import AblePlayer from '@smithsonian/ableplayer-module-test';
 
 interface PlayerOtherOptions {
   poster?: string;
@@ -27,8 +27,6 @@ onMounted(() => {
     return;
   }
   player = new AblePlayer(videoPlayer.value);
-  console.log('Instance count:', AblePlayer.ablePlayerInstances.size);
-  console.log('Next index:', AblePlayer.nextIndex);
 });
 
 onBeforeUnmount(() => {
