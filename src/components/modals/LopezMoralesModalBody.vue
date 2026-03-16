@@ -2,7 +2,7 @@
   <div>
     <AblePlayer :other-options="{ poster }">
       <source
-        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_mercedes-20250910.mp4"
+        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_mercedes-20260316.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
     </AblePlayer>

@@ -2,7 +2,7 @@
   <div>
     <AblePlayer :other-options="{ poster }">
       <source
-        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/annie_jump_cannon_classifying_stars.mp4"
+        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/annie_jump_cannon_classifying_stars-20260316.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
     </AblePlayer>

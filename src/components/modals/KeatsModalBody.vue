@@ -3,7 +3,7 @@
     <AblePlayer :other-options="{ poster }">
       <source
         type="video/mp4"
-        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_keats_conservation_science_imaging-20250910.mp4"
+        src="https://lweb.cfa.harvard.edu/smgdvl/datalabs/video_extra_keats_conservation_science_imaging-20260316.mp4"
       />
       <track label="Captions" kind="captions" srclang="en" :src="captions" />
       <track label="Audio Description" kind="descriptions" srclang="en" :src="description" />

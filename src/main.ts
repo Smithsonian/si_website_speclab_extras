@@ -1,5 +1,4 @@
 import './assets/speclab_extras_theme.scss';
-// import 'ableplayer/build/ableplayer.min.css';
 import '@smithsonian/ableplayer-module-test/build/ableplayer.min.css';
 import App from './App.vue';
 import { ViteSSG } from 'vite-ssg/single-page';
